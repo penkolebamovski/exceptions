@@ -5,11 +5,15 @@ package sumator;
  */
 public class Demo {
   public static void main(String[] args) {
-
     Sumator sum = new Sumator();
-    String a = "30";
-    String b = "20";
-    System.out.println(sum.sum(a, b));
+    try {
+      String a = "avc";
+      String b = "20";
+      System.out.println(sum.sum(a, b));
+    } catch (IllegalArgumentException e) {
+      System.out.println(e.getMessage());
+    } catch (NullPointerException ex) {
+      System.out.println("The argument is null");
+    }
   }
-
 }
