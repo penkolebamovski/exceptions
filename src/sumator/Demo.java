@@ -5,14 +5,11 @@ package sumator;
  */
 public class Demo {
   public static void main(String[] args) {
-    try {
-      SumString sum = new SumString();
-      String a = new String("15");
-      String b = new String("20");
-      sum.sum(a, b);
-    } catch (NullPointerException e) {
-      System.out.println("Error");
-    }
 
+    Sumator sum = new Sumator();
+    String a = "30";
+    String b = "20";
+    System.out.println(sum.sum(a, b));
   }
+
 }

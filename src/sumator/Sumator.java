@@ -5,7 +5,7 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 /**
  * @author Stanislava Kaukova(sisiivanovva@gmail.com)
  */
-public class SumString {
+public class Sumator {
   public int sum(String a, String b) {
     try {
       int x = Integer.parseInt(a);
@@ -13,10 +13,9 @@ public class SumString {
       int sum = x + y;
       return sum;
     } catch (NumberFormatException e) {
-      return 101;
+      throw new IllegalArgumentException("Invalid input");
     } catch (Exception e) {
-      return 200;
+      throw new IllegalArgumentException("Exception");
     }
-
   }
 }
