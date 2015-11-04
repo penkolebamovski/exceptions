@@ -5,7 +5,7 @@ import com.sun.org.apache.xpath.internal.SourceTree;
 /**
  * @author Stanislava Kaukova(sisiivanovva@gmail.com)
  */
-public class sumString {
+public class SumString {
   public void sum(String a, String b) {
     try {
       int x = Integer.parseInt(a);
