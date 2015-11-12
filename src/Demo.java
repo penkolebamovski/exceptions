@@ -6,6 +6,6 @@ public class Demo {
     public static void main(String[] args) {
         File opr = new File();
 
-        System.out.println("The sum is:" + opr.sum(3,4));
+        System.out.println("The sum is:" + opr.sum(3,4,5));
     }
 }
